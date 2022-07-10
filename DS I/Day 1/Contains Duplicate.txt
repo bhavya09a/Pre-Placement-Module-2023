@@ -1,0 +1,30 @@
+class Solution {
+public:
+    bool containsDuplicate(vector<int> & nums) {
+        
+        /*map<int,int>m;
+        for(auto i:nums) m[i]++;
+        
+        //for( auto i:m){
+            //cout<<i.first<<" "<<i.second<<endl;
+        
+        for(auto i:m){
+            if(i.second>=2)
+                return true;
+        }
+        return false;
+      */
+        
+        set<int>nums_set(nums.begin(),nums.end());
+        
+           if(nums_set.size() != nums.size())
+               return true;
+            else
+                return false;
+    
+        
+        
+    }
+    
+};
+    
